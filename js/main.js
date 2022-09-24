@@ -1,3 +1,9 @@
+if(innerWidth < 822){
+    document.body.style.display="none"
+    setTimeout(()=>{
+        alert("Hi , This Application Doesn't Support Mobile Version Yet ;-)")
+    },50)
+}
 //* ------Declaration
 const app = document.querySelector('.app');
 let tips = document.querySelectorAll('.tips > *:not(:last-child)');
