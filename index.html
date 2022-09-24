@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>spli<br>tter </h1>
+        <div class="app">
+            <section class="sec-one">
+                    <label>BILL</label>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <input type="text" id="bill" >
+
+                    <label>Select Tip %</label>
+                    <div class="tips">
+                            <span class="spn1" data-val="05" >5%</span>
+                            <span class="spn2" data-val="10" >10%</span>
+                            <span class="spn3" data-val="15">15%</span>
+                            <span class="spn4" data-val="25">25%</span>
+                            <span class="spn5" data-val="50">50%</span>
+                            <input class="spn6" id="custom" type="text" placeholder="Custom">
+                        
+                    </div>
+
+                    <label>Number Of People</label>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="nbp" value="1" >
+            </section>
+            <section class="sec-two">
+                <div class="result">
+                <p>Tip Amount <br> <sub>/Person</sub> </p>
+                <div class="tip-am">0.00</div>
+                <p>Total <br><sub>/Person</sub></p>
+                <div class="total">0.00</div>
+                </div>
+                <button class="reset">Reset</button>
+            </section>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/fc8080f1e4.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
