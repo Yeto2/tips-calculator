@@ -192,6 +192,10 @@ i {
         width: 333px;
         height: 370px;
     }
+    .tip-am, .total {
+        position: relative;
+        top: -10px !important;
+    }
 }
 @media (max-width: 375px) {
     i{
