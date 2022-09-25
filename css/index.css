@@ -170,3 +170,48 @@ i {
     left: -30px;
     top: 0px;
 }
+/* --------- Media Query ---------*/
+
+@media (max-width: 768px) {
+    
+    .container {
+        height: 100%;
+    }
+    h1 {
+        margin: 35px 0px 24px;
+    }
+    .app {
+        
+        height: fit-content;
+        flex-direction: column !important;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 425px) {
+    .sec-one, .sec-two {
+        width: 333px;
+        height: 370px;
+    }
+}
+@media (max-width: 375px) {
+    i{
+        bottom: -36px;
+    }
+    .sec-one, .sec-two {
+        width: 285px;
+    }
+    .tips {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .spn3 {grid-area: 2 / 2 / 3 / 2;}
+    .spn4 {grid-area: 2 / 3 / 3 / 3;}
+    .spn5 {grid-area: 3 / 2 / 3 / 3;}
+    .spn6 {grid-area: 3 / 3 / 3 / 3;}
+}
+
+@media (max-width: 320px){
+.sec-one, .sec-two {
+    width: 236px;
+}}
