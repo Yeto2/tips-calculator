@@ -21,7 +21,7 @@ tips.forEach(ele => {
         let pecentage = e.target.dataset.val
         if (pers) {
             amount.innerText = `${((bv * pecentage / 100)/pers).toFixed(2)}`
-            total.innerText = `${((bv / pers) + +(amount.innerHTML)).toF}`
+            total.innerText = `${((bv / pers) + +(amount.innerHTML)).toFixed(2)}`
         }else{
             amount.innerText = `${bv}`
         }
